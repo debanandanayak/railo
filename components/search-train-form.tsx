@@ -5,9 +5,8 @@ import { cn } from "cn";
 import { addDays, format } from "date-fns";
 import { ChevronDownIcon } from "lucide-react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import React from "react";
-import { z } from "zod/v4";
 import { Button } from "@/components/ui/button";
 import {
   Field,
@@ -22,44 +21,23 @@ import { Calendar } from "./ui/calendar";
 import { Card, CardContent, CardFooter } from "./ui/card";
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 
-const formSchema = z.object({
-  sconcessionBooking: z.boolean().default(false),
-
-  srcStn: z.string().trim().min(1, { message: "Source station is required" }),
-
-  destStn: z
-    .string()
-    .trim()
-    .min(1, { message: "Destination station is required" }),
-
-  jrnyClass: z.string().default(""),
-
-  jrnyDate: z.string().trim(),
-  // .min(1, { message: "Journey date is required" }),
-
-  quotaCode: z.string().default("GN"),
-  currentBooking: z.string().default("false"),
-  flexiFlag: z.boolean().default(true),
-  handicapFlag: z.boolean().default(false),
-  ticketType: z.string().default("E"),
-  loyaltyRedemptionBooking: z.boolean().default(false),
-  ftBooking: z.boolean().default(false),
-});
 
 export function SearchTrainForm({
   className,
   ...props
 }: React.ComponentProps<"div">) {
-  const [date, setDate] = React.useState<Date>(new Date());
+  const params = useSearchParams()
+  const [date, setDate] = React.useState<Date>(new Date(params.get("jrnyDate") ?? Date.now()));
   const [open, setOpen] = React.useState(false);
   const { stations } = useLocalStore();
   const router = useRouter();
 
+
   const form = useForm({
     defaultValues: {
-      srcStn: "",
-      destStn: "",
-      jrnyDate: new Date(),
+      srcStn: params.get("srcStn")??"",
+      destStn: params.get("destStn")??"",
+      jrnyDate: date,
     },
     onSubmit: async ({ value }) => {
       console.log(value);
@@ -77,7 +55,7 @@ export function SearchTrainForm({
   });
 
   return (
-    <div className={cn("flex flex-col gap-6", className)} {...props}>
+    <div className={cn("flex flex-col gap-4", className)} {...props}>
       <form
         id="search-train-form"
         onSubmit={(e) => {
@@ -225,7 +203,7 @@ export function SearchTrainForm({
                             }}
                             defaultMonth={date}
                             disabled={(date) =>
-                              date < new Date(addDays(new Date(), 0)) ||
+                              date < new Date(addDays(new Date(), -1)) ||
                               date > new Date(addDays(new Date(), 63))
                             }
                             className="p-0 [--cell-size:--spacing(9.5)]"
@@ -264,13 +242,14 @@ export function SearchTrainForm({
               );
             }}
           </form.Field>
+          <Field>
+            <Button type="submit" form="search-train-form">
+              Search
+            </Button>
+          </Field>
         </FieldGroup>
       </form>
-      <Field>
-        <Button type="submit" form="search-train-form">
-          Search
-        </Button>
-      </Field>
+
       <FieldSeparator>Or</FieldSeparator>
       <Field className="grid gap-4 sm:grid-cols-2">
         <Link href={"/pnr-enquiry"}>

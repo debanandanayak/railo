@@ -1,0 +1,247 @@
+{
+    "trainBtwnStnsList": [
+        {
+            "trainNumber": "18040",
+            "fromStnCode": "BBS",
+            "toStnCode": "SHM",
+            "distance": "0",
+            "avlClasses": [
+                "2A",
+                "3A",
+                "SL"
+            ],
+            "journeyDate": "2026-10-06T00:00:00.000",
+            "atasOpted": "false",
+            "flexiFlag": "false",
+            "quotaCode": "GN",
+            "classAvlDTO": [
+                {
+                    "distance": "437",
+                    "enqClass": "2A",
+                    "trainOwner": "0",
+                    "baseFare": "940",
+                    "reservationCharge": "50",
+                    "superfastCharge": "0",
+                    "fuelAmount": "0.0",
+                    "totalConcession": "0",
+                    "tatkalFare": "0",
+                    "serviceTax": "50.0",
+                    "otherCharge": "0",
+                    "cateringCharge": "0",
+                    "dynamicFare": "0",
+                    "totalFare": "1040",
+                    "otpAuthenticationFlag": "0",
+                    "cateringFlag": "A",
+                    "avlDayList": [
+                        {
+                            "availablityDate": "6-10-2026",
+                            "availablityStatus": "GNWL7/WL2",
+                            "reasonType": "S",
+                            "availablityType": "3",
+                            "currentBkgFlag": "N",
+                            "wlType": "9",
+                            "delayFlag": "N",
+                            "delay": "0"
+                        },
+                        {
+                            "availablityDate": "13-10-2026",
+                            "availablityStatus": "GNWL11/WL2",
+                            "reasonType": "S",
+                            "availablityType": "3",
+                            "currentBkgFlag": "N",
+                            "wlType": "9",
+                            "delayFlag": "N",
+                            "delay": "0"
+                        },
+                        {
+                            "availablityDate": "20-10-2026",
+                            "availablityStatus": "GNWL14/WL5",
+                            "reasonType": "S",
+                            "availablityType": "3",
+                            "currentBkgFlag": "N",
+                            "wlType": "9",
+                            "delayFlag": "N",
+                            "delay": "0"
+                        },
+                        {
+                            "availablityDate": "27-10-2026",
+                            "availablityStatus": "GNWL41/WL18",
+                            "reasonType": "S",
+                            "availablityType": "3",
+                            "currentBkgFlag": "N",
+                            "wlType": "9",
+                            "delayFlag": "N",
+                            "delay": "0"
+                        }
+                    ],
+                    "informationMessage": [
+                        {
+                            "message": "* IR recovers only 57% of cost of travel on an average.\n* Rounding off  to next multiple of Rs. 5 is included in Base fare.\n* Final fare based on passenger(s) added will be displayed on REVIEW JOURNEY page including concessions / dynamic fare charges etc. whichever applicable.\n",
+                            "popup": "false",
+                            "paramName": "FARE_BREAKUP"
+                        },
+                        {
+                            "message": "Forgo Concession Opted",
+                            "popup": "false",
+                            "paramName": "FORGO_CONC"
+                        }
+                    ],
+                    "lastUpdateTime": "19 Minutes and 32 Seconds",
+                    "avlFound": "true"
+                },
+                {
+                    "distance": "437",
+                    "enqClass": "3A",
+                    "trainOwner": "0",
+                    "baseFare": "660",
+                    "reservationCharge": "40",
+                    "superfastCharge": "0",
+                    "fuelAmount": "0.0",
+                    "totalConcession": "0",
+                    "tatkalFare": "0",
+                    "serviceTax": "35.0",
+                    "otherCharge": "0",
+                    "cateringCharge": "0",
+                    "dynamicFare": "0",
+                    "totalFare": "735",
+                    "otpAuthenticationFlag": "0",
+                    "cateringFlag": "A",
+                    "avlDayList": [
+                        {
+                            "availablityDate": "6-10-2026",
+                            "availablityStatus": "GNWL22/WL9",
+                            "reasonType": "S",
+                            "availablityType": "3",
+                            "currentBkgFlag": "N",
+                            "wlType": "9",
+                            "delayFlag": "N",
+                            "delay": "0"
+                        },
+                        {
+                            "availablityDate": "13-10-2026",
+                            "availablityStatus": "GNWL37/WL12",
+                            "reasonType": "S",
+                            "availablityType": "3",
+                            "currentBkgFlag": "N",
+                            "wlType": "9",
+                            "delayFlag": "N",
+                            "delay": "0"
+                        },
+                        {
+                            "availablityDate": "20-10-2026",
+                            "availablityStatus": "GNWL13/WL2",
+                            "reasonType": "S",
+                            "availablityType": "3",
+                            "currentBkgFlag": "N",
+                            "wlType": "9",
+                            "delayFlag": "N",
+                            "delay": "0"
+                        },
+                        {
+                            "availablityDate": "27-10-2026",
+                            "availablityStatus": "GNWL69/WL52",
+                            "reasonType": "S",
+                            "availablityType": "3",
+                            "currentBkgFlag": "N",
+                            "wlType": "9",
+                            "delayFlag": "N",
+                            "delay": "0"
+                        }
+                    ],
+                    "informationMessage": [
+                        {
+                            "message": "* IR recovers only 57% of cost of travel on an average.\n* Rounding off  to next multiple of Rs. 5 is included in Base fare.\n* Final fare based on passenger(s) added will be displayed on REVIEW JOURNEY page including concessions / dynamic fare charges etc. whichever applicable.\n",
+                            "popup": "false",
+                            "paramName": "FARE_BREAKUP"
+                        },
+                        {
+                            "message": "Forgo Concession Opted",
+                            "popup": "false",
+                            "paramName": "FORGO_CONC"
+                        }
+                    ],
+                    "lastUpdateTime": "19 Minutes and 32 Seconds",
+                    "avlFound": "true"
+                },
+                {
+                    "distance": "437",
+                    "enqClass": "SL",
+                    "trainOwner": "0",
+                    "baseFare": "260",
+                    "reservationCharge": "20",
+                    "superfastCharge": "0",
+                    "fuelAmount": "0.0",
+                    "totalConcession": "0",
+                    "tatkalFare": "0",
+                    "serviceTax": "0.0",
+                    "otherCharge": "0",
+                    "cateringCharge": "0",
+                    "dynamicFare": "0",
+                    "totalFare": "280",
+                    "otpAuthenticationFlag": "0",
+                    "cateringFlag": "A",
+                    "avlDayList": [
+                        {
+                            "availablityDate": "6-10-2026",
+                            "availablityStatus": "GNWL90/WL1",
+                            "reasonType": "S",
+                            "availablityType": "3",
+                            "currentBkgFlag": "N",
+                            "wlType": "9",
+                            "delayFlag": "N",
+                            "delay": "0"
+                        },
+                        {
+                            "availablityDate": "13-10-2026",
+                            "availablityStatus": "GNWL94/WL8",
+                            "reasonType": "S",
+                            "availablityType": "3",
+                            "currentBkgFlag": "N",
+                            "wlType": "9",
+                            "delayFlag": "N",
+                            "delay": "0"
+                        },
+                        {
+                            "availablityDate": "20-10-2026",
+                            "availablityStatus": "GNWL73/RAC126",
+                            "reasonType": "S",
+                            "availablityType": "2",
+                            "currentBkgFlag": "N",
+                            "wlType": "9",
+                            "delayFlag": "N",
+                            "delay": "0"
+                        },
+                        {
+                            "availablityDate": "27-10-2026",
+                            "availablityStatus": "GNWL151/WL65",
+                            "reasonType": "S",
+                            "availablityType": "3",
+                            "currentBkgFlag": "N",
+                            "wlType": "9",
+                            "delayFlag": "N",
+                            "delay": "0"
+                        }
+                    ],
+                    "informationMessage": [
+                        {
+                            "message": "* IR recovers only 57% of cost of travel on an average.\n* Rounding off  to next multiple of Rs. 5 is included in Base fare.\n* Final fare based on passenger(s) added will be displayed on REVIEW JOURNEY page including concessions / dynamic fare charges etc. whichever applicable.\n",
+                            "popup": "false",
+                            "paramName": "FARE_BREAKUP"
+                        },
+                        {
+                            "message": "Forgo Concession Opted",
+                            "popup": "false",
+                            "paramName": "FORGO_CONC"
+                        }
+                    ],
+                    "lastUpdateTime": "19 Minutes and 31 Seconds",
+                    "avlFound": "true"
+                }
+            ]
+        }
+    ],
+    "serverId": "DM8MS3",
+    "timeStamp": "2026-10-04T05:40:44.950",
+    "vikalpInSpecialTrainsAccomFlag": "false",
+    "alternateEnquiryFlag": "false"
+}

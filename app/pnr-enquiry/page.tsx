@@ -1,4 +1,3 @@
-import { noop, QueryClient } from "@tanstack/react-query";
 import { format } from "date-fns";
 import Link from "next/link";
 import { PnrEnquiryForm } from "@/components/pnr-enquiry-form";
@@ -21,7 +20,6 @@ import {
 } from "@/components/ui/table";
 import { minutesToTime } from "@/lib/healpers";
 import { getPnrStatus } from "@/server/pnr";
-import { getQueryClient } from "../get-query-client";
 
 export default async function PnrEnquiry({
   searchParams,
